@@ -105,16 +105,16 @@ form button:hover {
   box-shadow: 0 2px 1rem var(--purple-shadow);
 }
 
-@media(max-width: 420px) {
+@media (max-width: 420px) {
   form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  form input, form button {
+  form input,
+  form button {
     width: 100%;
   }
 }
-
 </style>
