@@ -19,7 +19,7 @@ const { copy, copied } = useClipboard();
       <a target="_blank" :href="props.shortenerURL" v-if="props.shortenerURL">{{
         props.shortenerURL
       }}</a>
-      <button @click="copy(props.shortenerURL)">
+      <button @click="copy(props.shortenerURL ? props.shortenerURL : '')">
         {{ copied ? "Copiado!" : "Copiar" }}
       </button>
     </div>
